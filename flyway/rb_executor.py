@@ -36,10 +36,10 @@ def apply_rollback_sql(server, database, username, password, sql_file_path):
 
 if __name__ == "__main__":
     # Replace these parameters with your actual DB connection info and rollback file path
-    server = 'nhonlineordersql.database.windows.net'
-    database = 'POC_DBAutomation'
-    username = 'Flyway_User'
-    password = '20@5_us3r'
-    sql_file_path = 'C:/Users/TejaSurendar.Reddy/DB_Migrotron/flyway/rollback/rb_users_table.sql'
+    server = os.getenv('server')
+    database = os.getenv('database')
+    username = os.getenv('username')
+    password = os.getenv('password')
+    sql_file_path = os.getenv('sql_file_path')
 
     apply_rollback_sql(server, database, username, password, sql_file_path)
