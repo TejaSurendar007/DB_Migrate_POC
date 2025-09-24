@@ -1,5 +1,4 @@
 # Flyway ignores
-flyway-dev.conf
 *.user.toml
 *.artifact
 report.html
