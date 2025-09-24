@@ -1,0 +1,8 @@
+
+flyway.url=jdbc:url;
+flyway.user=DB_Username
+flyway.password=DB_password
+flyway.locations=filesystem:C:/Users/TejaSurendar.Reddy/DB_Migrotron/flyway/migrations
+flyway.baselineOnMigrate=true
+flyway.detectEncoding=true
+flyway.cleanDisabled=false
